@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First JavaScript</h2>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+
+<br> </br>
+<h2>Enter a number from 1-10</h2>
+<button type="button" on click="number()">Submit</button>
+<p id= "demo"> </p>
+<input type = text> Enter number from 1-10 </input> 
+<script>
+function number(){
+  var x, text;
+  x= document.getElementById("n").value;
+  if (isNaN(x) || x<1 || x>10) {
+      text= "Input not balid";
+  }else {
+    text="Input OK";
+  }
+  document.getElementById("demo").innerHTML= text;
+  alert(text);
+}
+
+</script>
+
+</body>
+</html>
